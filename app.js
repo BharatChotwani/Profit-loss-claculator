@@ -10,17 +10,17 @@ function calculateLossAndProfit(initial, quantity, current) {
         var loss = (initial - current) * quantity;
         var lossPercentage = (loss/current) * 100;
 
-        showOutput(`Namaste the loss is ${loss} and the percent is ${lossPercentage}%`);
+        showOutput(`Namaste the loss is ${loss.toFixed(2)} and the percent is ${lossPercentage.toFixed(2)}%`);
         output.style.color = 'red';
     } else if (current > initial){
         var profit = (current - initial) * quantity;
         var profitPercentage = (profit/initial) * 100;
-        showOutput(`Namaste the profit is ${profit} and the percent is ${profitPercentage}%`);
+        showOutput(`Namaste the profit is ${profit.toFixed(2)} and the percent is ${profitPercentage.toFixed(2)}%`);
         output.style.color = 'white';
         
     }
     else {
-        var emptyFields = alert('pleas fill values in  the input fields');
+        var emptyFields = alert('please fill values in  the input fields');
         
     }
 }
@@ -29,7 +29,6 @@ function submitHandler(){
     var iP = Number(initialPrice.value);
     var qS = Number(quantityStocks.value);
     var currP = Number(currentPrice.value);
-
     calculateLossAndProfit(iP, qS, currP);
 }
 
