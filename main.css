@@ -14,14 +14,17 @@ body{
 
 h1{
     color: var(--primary-color);
+    text-align: center;
 }
 
  main{ 
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     width: 50%;
     height: 25vh;
     width: 25vw;
+    width: 25vw;
+    margin: 0 auto;
 } 
 label{
     display: block;
@@ -54,11 +57,12 @@ input::placeholder {
 }
 
 #output-box{
-    border: 5px solid none;
     background-color: var(--background-color);
-    /* float: right; */
+    border: 2px solid var(--background-color);
     text-align: center;
     padding: 1.5rem;
     margin: 1.5rem;
+    align-self: flex-end;
+    /* float: right; */
     
 }
