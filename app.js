@@ -6,7 +6,9 @@ const output = document.querySelector('#output-box');
 
 function calculateLossAndProfit(initial, quantity, current) {
 
-    if(initial < 1 || quantity < 1 || current < 1){
+    if(initial === current){
+        showOutput("No profit and No loss");
+    } else if(initial < 1 || quantity < 1 || current < 1){
         showOutput("Enter values greater than 0");
     output.style.color = 'red';} else{
         if(initial > current) {
