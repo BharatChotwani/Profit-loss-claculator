@@ -18,8 +18,8 @@ h1{
 }
 
  main{ 
-    /* display: flex; */
-    /* flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     width: 50%;
     height: 25vh;
     width: 25vw;
